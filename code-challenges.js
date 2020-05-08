@@ -38,7 +38,7 @@ var mixedDataArray = [true, 8, "hello", 90, -8, null, 0, 46, 59, 107, "hey!"]
 
 var vowelTester1 = "learn"
 // Expected output: 1
-var vowelTester1 = "throw"
+var vowelTester2 = "throw"
 // Expected output: 3
 
 
