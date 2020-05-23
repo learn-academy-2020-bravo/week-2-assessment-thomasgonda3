@@ -27,11 +27,12 @@
           }
         }
 
+        //set the state correctly
         nextMood = () => {
           if(currentMood === moods.length - 1){
-            this.setState({ currentMood: currentMood = 0 })
+            this.setState({ currentMood: 0 })
           } else {
-            this.setState({ currentMood: currentMood + 1 })
+            this.setState({ currentMood: this.state.currentMood + 1 })
           }
         }
 
@@ -41,14 +42,14 @@
 
         render(){
           return(
-            <div>
-              <MoodMeter
-                moodOptions={ this.state.moods[this.state.currentMood] }
-                next={ this.nextMood }
-                setThisMood={ this.setThisMood }
-                set={ this.state.setMood }
-              />
-            </div>
+              <div>
+                <MoodMeter
+                  moodOptions={ this.state.moods[this.state.currentMood] }
+                  next={ this.nextMood }
+                  setThisMood={ this.setThisMood }
+                  set={ this.state.setMood }
+                />
+              </div>
           )
         }
       }
